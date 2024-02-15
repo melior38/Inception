@@ -1,4 +1,6 @@
 #!/bin/sh
+
+#temporaire 
 WP_DATABASE_NAME="Wordpress"
 MYSQL_USER="root"
 MYSQL_PASS="pass"
