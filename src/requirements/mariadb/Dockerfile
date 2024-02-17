@@ -1,9 +1,9 @@
 FROM debian:bullseye
 
 ARG WP_DATABASE_NAME
-ARG MARIADB_USER
-ARG MARIADB_PASS
-ARG MARIADB_ROOT_PASS
+ARG MYSQL_USER
+ARG MYSQL_PASS
+ARG MYSQL_ROOT_PASS
 
 RUN apt -y update && apt -y upgrade && apt -y install mariadb-server
 
