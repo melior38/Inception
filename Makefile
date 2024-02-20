@@ -37,11 +37,11 @@ f_purge: purge_images purge_volumes
 reset: f_purge reset_volumes
 
 create_volumes:
-	sudo mkdir -p /home/trubat-d/data/wordpress
-	sudo mkdir -p /home/trubat-d/data/mariadb
+	sudo mkdir -p /home/asouchet/data/wordpress
+	sudo mkdir -p /home/asouchet/data/mariadb
 
 purge_volumes:
-	sudo rm -rf /home/trubat-d/data/wordpress
-	sudo rm -rf /home/trubat-d/data/mariadb
+	sudo rm -rf /home/asouchet/data/wordpress
+	sudo rm -rf /home/asouchet/data/mariadb
 
 reset_volumes: purge_volumes create_volumes
