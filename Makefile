@@ -15,19 +15,19 @@ shell:
 		sudo docker compose exec -it ${ARGS} /bin/sh
 
 ps:
-	cd ./srcs/ && \
+	cd ./src/ && \
 	sudo docker compose ps -a
 
 net:
-	cd ./srcs/ && \
+	cd ./src/ && \
 	sudo docker network ls
 
 images:
-	cd ./srcs/ && \
+	cd ./src/ && \
 	sudo docker images
 
 prune_images:
-	cd ./srcs/ && \
+	cd ./src/ && \
 	sudo docker image prune -f -a
 
 purge_images: stop prune_images
