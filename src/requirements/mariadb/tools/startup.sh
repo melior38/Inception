@@ -1,12 +1,5 @@
 #!/bin/sh
 
-#temporaire 
-WP_DATABASE_NAME="Wordpress"
-MYSQL_USER="root"
-MYSQL_PASS="pass"
-MYSQL_ROOT_PASS="password"
-
-
 cat << EOF > /tmp/db_config.sql
 CREATE DATABASE IF NOT EXISTS $WP_DATABASE_NAME;
 CREATE USER IF NOT EXISTS '$MYSQL_USER'@'%' IDENTIFIED BY '$MYSQL_PASS';
