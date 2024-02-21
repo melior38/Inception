@@ -22,6 +22,9 @@ net:
 	cd ./src/ && \
 	sudo docker network ls
 
+boom: stop
+	sudo docker system prune -f -a
+
 images:
 	cd ./src/ && \
 	sudo docker images
